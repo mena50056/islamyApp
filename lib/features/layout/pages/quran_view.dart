@@ -13,6 +13,12 @@ class QuranView extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
+      // child: Column(
+      //   children: [
+      //
+      //
+      //   ],
+      // ),
     );
   }
 }

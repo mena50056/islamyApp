@@ -16,7 +16,7 @@ class AppAssets {
   static const String timeIcon = 'assets/icons/Vector (2).png';
 
   //quran view
-  static const String quranViewBg = 'assets/images/quranbg.png';
+  static const String quranViewBg = 'assets/images/quranBackground.png';
 
   //hadith view
   static const String hadithViewBg = 'assets/images/hadithbg.png';
