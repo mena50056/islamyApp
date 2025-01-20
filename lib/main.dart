@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islamy/features/layout/pages/layout_page.dart';
+
 import './presentation/pages/splash_screen.dart';
 
 void main() {
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
+  //mmmm
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
