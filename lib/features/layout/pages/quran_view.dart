@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islamy/core/constants/app_assets.dart';
+import 'package:islamy/features/layout/widgets/quran_view/quran_sura_view.dart';
 import 'package:islamy/features/layout/widgets/quran_view/resent.dart';
 import 'package:islamy/features/layout/widgets/quran_view/sura_card.dart';
 import 'package:islamy/model/resent_data.dart';
@@ -376,7 +377,7 @@ class QuranView extends StatelessWidget {
       ),
       child: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(AppAssets.quranViewLogo),
             Padding(
@@ -445,6 +446,7 @@ class QuranView extends StatelessWidget {
               child: Text(
                 'Sura List ',
                 style: TextStyle(
+                  fontFamily: 'janna',
                   color: AppColors.primaryColor,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -458,11 +460,33 @@ class QuranView extends StatelessWidget {
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               scrollDirection: Axis.vertical,
-              itemBuilder: (context, index) => SuraCard(
-                suraNameAr: arabicAuranSuras[index],
-                suraNameEn: englishQuranSurahs[index],
-                suraNumber: index + 1,
-                suraVerses: AyaNumber[index],
+              itemBuilder: (context, index) => GestureDetector(
+                onTap: () {
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => QuranSuraView(
+                  //       suraNameAr: arabicAuranSuras[index],
+                  //       suraNameEn: englishQuranSurahs[index],
+                  //       suraNumber: (index + 1).toString(),
+                  //       suraVerses: AyaNumber[index].toString(),
+                  //     ),
+                  //   ),
+                  // );
+                  Navigator.pushNamed(context, QuranSuraView.routeName,
+                      arguments: SuraData(
+                        suraNameAr: arabicAuranSuras[index],
+                        suraNameEn: englishQuranSurahs[index],
+                        suraNumber: (index + 1).toString(),
+                        suraVerses: AyaNumber[index].toString(),
+                      ));
+                },
+                child: SuraCard(
+                  suraNameAr: arabicAuranSuras[index],
+                  suraNameEn: englishQuranSurahs[index],
+                  suraNumber: index + 1,
+                  suraVerses: AyaNumber[index],
+                ),
               ),
               itemCount: arabicAuranSuras.length,
               separatorBuilder: (BuildContext context, int index) =>
@@ -476,4 +500,18 @@ class QuranView extends StatelessWidget {
       ),
     );
   }
+}
+
+class SuraData {
+  final String suraNameAr;
+  final String suraNameEn;
+  final String suraNumber;
+  final String suraVerses;
+
+  SuraData({
+    required this.suraNameAr,
+    required this.suraNameEn,
+    required this.suraNumber,
+    required this.suraVerses,
+  });
 }

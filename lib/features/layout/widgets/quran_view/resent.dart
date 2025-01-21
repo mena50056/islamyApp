@@ -28,6 +28,7 @@ class Resent extends StatelessWidget {
               Text(
                 resentData.suraNameEn,
                 style: const TextStyle(
+                  fontFamily: 'janna',
                   color: Color(0xff202020),
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -36,6 +37,7 @@ class Resent extends StatelessWidget {
               Text(
                 resentData.suraNameAr,
                 style: const TextStyle(
+                  fontFamily: 'janna',
                   color: Color(0xff202020),
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -44,6 +46,7 @@ class Resent extends StatelessWidget {
               Text(
                 "${resentData.suraVerses} Verses  ",
                 style: const TextStyle(
+                  fontFamily: 'janna',
                   color: Color(0xff202020),
                   fontSize: 14,
                   fontWeight: FontWeight.bold,

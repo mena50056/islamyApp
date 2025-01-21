@@ -34,6 +34,7 @@ class SuraCard extends StatelessWidget {
             child: Text(
               suraNumber.toString(),
               style: const TextStyle(
+                  fontFamily: 'janna',
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: AppColors.white),
@@ -48,6 +49,7 @@ class SuraCard extends StatelessWidget {
               Text(
                 suraNameEn,
                 style: const TextStyle(
+                  fontFamily: 'janna',
                   color: AppColors.white,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -56,6 +58,7 @@ class SuraCard extends StatelessWidget {
               Text(
                 '$suraVerses Verses ',
                 style: const TextStyle(
+                  fontFamily: 'janna',
                   color: AppColors.white,
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
@@ -67,6 +70,7 @@ class SuraCard extends StatelessWidget {
           Text(
             suraNameAr,
             style: const TextStyle(
+              fontFamily: 'janna',
               color: AppColors.white,
               fontSize: 20,
               fontWeight: FontWeight.bold,

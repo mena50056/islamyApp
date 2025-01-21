@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islamy/features/layout/pages/layout_page.dart';
+import 'package:islamy/features/layout/widgets/quran_view/quran_sura_view.dart';
 
 import './presentation/pages/splash_screen.dart';
 
@@ -24,6 +25,9 @@ class MyApp extends StatelessWidget {
         },
         LayoutPage.routeName : (_){
           return const LayoutPage();
+        },
+        QuranSuraView.routeName: (_) {
+          return QuranSuraView();
         }
       },
     );
