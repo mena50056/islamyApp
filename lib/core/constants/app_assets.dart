@@ -19,6 +19,7 @@ class AppAssets {
   static const String quranViewBg = 'assets/images/quranBackground.png';
   static const String quranViewLogo = 'assets/images/quranLogo.png';
   static const String quranViewRecent = 'assets/images/quranResent.png';
+  static const String quranViewSuraNum = 'assets/icons/suranumber.png';
 
   //hadith view
   static const String hadithViewBg = 'assets/images/hadithbg.png';

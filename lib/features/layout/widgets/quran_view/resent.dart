@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:islamy/core/constants/colors.dart';
+import 'package:islamy/model/resent_data.dart';
 
 import '../../../../core/constants/app_assets.dart';
 
 class Resent extends StatelessWidget {
-  const Resent({super.key});
+  final ResentData resentData;
+
+  const Resent({super.key, required this.resentData});
 
   @override
   Widget build(BuildContext context) {
@@ -19,28 +22,28 @@ class Resent extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Column(
+          Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text(
-                "Al-Anbiya",
-                style: TextStyle(
+                resentData.suraNameEn,
+                style: const TextStyle(
                   color: Color(0xff202020),
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
-                "الأنبياء",
-                style: TextStyle(
+                resentData.suraNameAr,
+                style: const TextStyle(
                   color: Color(0xff202020),
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
-                "112 Verses  ",
-                style: TextStyle(
+                "${resentData.suraVerses} Verses  ",
+                style: const TextStyle(
                   color: Color(0xff202020),
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
