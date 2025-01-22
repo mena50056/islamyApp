@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:islamy/features/onpoard/pages/onboard_screen.dart';
 
 import '../../core/constants/app_assets.dart';
+import '../../core/constants/local_storage_keys.dart';
+import '../../core/servises/local_storge.dart';
+import '../../features/layout/pages/layout_page.dart';
 
 class SplashScreen extends StatefulWidget {
   static String routeName = "/splash";
@@ -20,7 +23,10 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(
        const Duration(seconds: 2),
         () {
-        Navigator.pushReplacementNamed(context, OnboardScreen.routeName);
+        var firstRun = LocalStorage.getBool(LocalStorageKeys.firstRun) ?? true;
+
+        Navigator.pushReplacementNamed(
+            context, firstRun ? OnboardScreen.routeName : LayoutPage.routeName);
       },
     );
   }

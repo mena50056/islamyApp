@@ -1,4 +1,4 @@
-class AppAssets {
+abstract class AppAssets {
   //splash
   static const String splashMosque = 'assets/images/Mosque-01.png';
   static const String splashShape04 = 'assets/images/Shape-04.png';
@@ -33,4 +33,9 @@ class AppAssets {
   static const String onpord4 = 'assets/images/onpord4.png';
   static const String onpord5 = 'assets/images/onpord5.png';
   static const String onpordLogo = 'assets/images/onboardlogo.png';
+
+  //sbha view
+  static const String sebhaViewBg = 'assets/images/sbhaBackground.png';
+  static const String sebhaViewHead = 'assets/images/sbhahead.png';
+  static const String sebhaViewBody = 'assets/images/SebhaBody.png';
 }
