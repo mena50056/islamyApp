@@ -21,13 +21,12 @@ class LayoutPage extends StatefulWidget {
 class _LayoutPageState extends State<LayoutPage> {
   int selectIndex = 0;
   List<Widget> tabs = [
-    const QuranView(),
-    const HadithView(),
+    QuranView(),
+    HadithView(),
     const SebhaView(),
     const RadioView(),
     const TimeView()
   ];
-
 
   @override
   Widget build(BuildContext context) {

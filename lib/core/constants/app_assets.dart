@@ -16,11 +16,21 @@ class AppAssets {
   static const String timeIcon = 'assets/icons/Vector (2).png';
 
   //quran view
-  static const String quranViewBg = 'assets/images/quranbg.png';
+  static const String quranViewBg = 'assets/images/quranBackground.png';
+  static const String quranViewLogo = 'assets/images/quranLogo.png';
+  static const String quranViewRecent = 'assets/images/quranResent.png';
+  static const String quranViewSuraNum = 'assets/icons/suranumber.png';
+  static const String quranViewSuraBg = 'assets/images/SouraDetailsScreen.png';
 
   //hadith view
-  static const String hadithViewBg = 'assets/images/hadithbg.png';
+  static const String hadithViewBg = 'assets/images/hadithBackground.png';
+  static const String hadithViewCard = 'assets/images/Hadith_Card.png';
 
-
-
+  //onpord
+  static const String onpord1 = 'assets/images/onpord1.png';
+  static const String onpord2 = 'assets/images/onpord2.png';
+  static const String onpord3 = 'assets/images/onpord3.png';
+  static const String onpord4 = 'assets/images/onpord4.png';
+  static const String onpord5 = 'assets/images/onpord5.png';
+  static const String onpordLogo = 'assets/images/onboardlogo.png';
 }
