@@ -25,4 +25,12 @@ class AppAssets {
   //hadith view
   static const String hadithViewBg = 'assets/images/hadithBackground.png';
   static const String hadithViewCard = 'assets/images/Hadith_Card.png';
+
+  //onpord
+  static const String onpord1 = 'assets/images/onpord1.png';
+  static const String onpord2 = 'assets/images/onpord2.png';
+  static const String onpord3 = 'assets/images/onpord3.png';
+  static const String onpord4 = 'assets/images/onpord4.png';
+  static const String onpord5 = 'assets/images/onpord5.png';
+  static const String onpordLogo = 'assets/images/onboardlogo.png';
 }

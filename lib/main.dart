@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:islamy/core/servises/local_storge.dart';
 import 'package:islamy/features/layout/pages/layout_page.dart';
 import 'package:islamy/features/layout/widgets/quran_view/quran_sura_view.dart';
 
 import './presentation/pages/splash_screen.dart';
+import 'features/onpoard/pages/onboard_screen.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await LocalStorage.init();
   runApp(const MyApp());
 }
 
@@ -27,7 +31,10 @@ class MyApp extends StatelessWidget {
           return const LayoutPage();
         },
         QuranSuraView.routeName: (_) {
-          return QuranSuraView();
+          return const QuranSuraView();
+        },
+        OnboardScreen.routeName: (_) {
+          return const OnboardScreen();
         }
       },
     );

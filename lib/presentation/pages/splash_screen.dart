@@ -1,6 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:islamy/features/layout/pages/layout_page.dart';
+import 'package:islamy/features/onpoard/pages/onboard_screen.dart';
+
 import '../../core/constants/app_assets.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,9 +20,8 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(
        const Duration(seconds: 2),
         () {
-        Navigator.pushReplacementNamed(context, LayoutPage.routeName);
-
-        },
+        Navigator.pushReplacementNamed(context, OnboardScreen.routeName);
+      },
     );
   }
 
