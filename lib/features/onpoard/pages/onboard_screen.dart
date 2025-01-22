@@ -25,7 +25,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    LocalStorage.setBool(LocalStorageKeys.firstRun, true);
+    LocalStorage.setBool(LocalStorageKeys.firstRun, false);
   }
 
   @override
