@@ -22,8 +22,8 @@ class _LayoutPageState extends State<LayoutPage> {
   int selectIndex = 0;
   List<Widget> tabs = [
     QuranView(),
-    HadithView(),
-    const SebhaView(),
+    const HadithView(),
+    SebhaView(),
     const RadioView(),
     const TimeView()
   ];
